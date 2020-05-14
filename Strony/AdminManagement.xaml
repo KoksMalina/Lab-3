@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="PPIU_Lab_3.Strony.AdminManagement"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PPIU_Lab_3.Strony"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Button Name="btnAddUser" Content="Dodaj Uzytkownika" RenderTransformOrigin="1.343,-1.653" Margin="51,220,0,0" VerticalAlignment="Top" Click="btnAddUser_Click"/>
+        <Button Name="btnUsunUzytkownika" Margin="51,273,0,0" VerticalAlignment="Top" Content="Usuń Użytkownika" Width="139" Click="btnUsunUzytkownika_Click"/>
+        <Button Name="btnResetujHasloUzytkownika" HorizontalAlignment="Right" Margin="0,321,1105,0" VerticalAlignment="Top" Content="Zresetuj Hasło" Click="btnResetujHasloUzytkownika_Click"/>
+        <TextBox Name="tbEmailDoZarzadzania" HorizontalAlignment="Left" Margin="323,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" Header="Podaj adres e-mail użytkownika" Visibility="Collapsed"/>
+        <Button Content="zatwierdź" Margin="356,352,0,0" VerticalAlignment="Top" Click="Button_Click" Name="confirDeletionmBtn" Visibility="Collapsed" />
+        <Button Content="resetuj hasło" Margin="469,352,0,0" VerticalAlignment="Top" Click="Button_Click_1" Name="resetBtn" Visibility="Collapsed" />
+        <Button Content="Potwierdź Uczestnictwo" Margin="993,252,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.419,-0.094" Click="Button_Click_2"/>
+        <Button Content="Odrzuć Uczestnictwo" Margin="1009,300,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.419,-0.094" Click="Button_Click_2"/>
+        <Button Content="Dodaj Wydarzenie" Margin="474,548,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.581,7.938"/>
+        <Button Content="Usuń Wydarzenie" Margin="640,548,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.581,7.938"/>
+        <Button Content="Modyfikuj Wydarzenie" Margin="527,617,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.581,7.938"/>
+
+
+    </Grid>
+</Page>

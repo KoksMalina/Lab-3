@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="PPIU_Lab_3.Strony.EventRegister"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PPIU_Lab_3.Strony"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBox Name="tbName" Header="Imie" Width="300" Height="75" Margin="10,25,970,620" />
+        <TextBox Name="tbNazwisko" Header="Nazwisko" Width="300" Height="75" Margin="388,25,592,620" />
+
+        <ComboBox Name="cbWydarzenie" Margin="10,211,0,0" Width="223" Header="Wybierz wydarzenie" SelectionChanged="cbWydarzenie_SelectionChanged">
+            <ComboBoxItem Content="E3"/>
+            <ComboBoxItem Content="Pyrkon"/>
+            <ComboBoxItem Content="Intel Extreme Masters"/>
+        </ComboBox>
+
+        <ComboBox Name="cbWyzywienie" Margin="10,375,0,0" Width="223" Header="wybierz preferencje żywieniowe">
+            <ComboBoxItem Content="Bez Preferencji"/>
+            <ComboBoxItem Content="Wegetariańskie"/>
+            <ComboBoxItem Content="Bez glutenu"/>
+        </ComboBox>
+
+        <ComboBox Name="cbtypUczestnika" Margin="10,476,0,0" Width="223" Header="Kim jesteś w wydarzeniu?">
+            <ComboBoxItem Content="Słuchacz"/>
+            <ComboBoxItem Content="Sponsor"/>
+            <ComboBoxItem Content="Organizator"/>
+            <ComboBoxItem Content="Autor"/>
+        </ComboBox>
+
+        <Button Name="btnRejestracjaNaWydarzenie" Content="Zarejestruj na wydarzenie" Click="btnRejestracjaNaWydarzenie_Click" Margin="71,572,0,0" VerticalAlignment="Top"/>
+        <TextBlock  Name="tbDataWydarzenia" HorizontalAlignment="Left" Margin="10,297,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="239"/>
+
+    </Grid>
+</Page>

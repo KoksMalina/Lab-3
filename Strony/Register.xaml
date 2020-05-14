@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="PPIU_Lab_3.Strony.Register"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PPIU_Lab_3.Strony"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBox Name="tbName" Margin="100,100,0,0"  Height="50" Width="300" VerticalAlignment="Top" HorizontalAlignment="Left" TextChanged="tbName_TextChanged"/>
+        <TextBox Name="tbLastName"  Height="50" Width="300" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="100,200,0,0" TextChanged="tbLastName_TextChanged"/>
+        <TextBox Name="tbPosession" Height="50" Width="300" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="100,300,0,0" TextChanged="tbPosession_TextChanged"/>
+        <CheckBox Name="cbGenderM" Margin="90,100,0,0"  Content="Mężczyzna" Checked="cbGenderM_Checked"/>
+        <CheckBox Name="cbGenderF" Margin="200,100,0,0" Content="Kobieta" Checked="cbGenderF_Checked" />
+        <TextBox Name="tbEmail" Height="50" Width="300" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,100,100,0" TextChanged="tbEmail_TextChanged"/>
+        <TextBox Name="tbLogin" Height="50" Width="300" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,200,100,0" TextChanged="tbLogin_TextChanged"/>
+        <TextBox Name="tbPassword" Height="50" Width="300" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,300,100,0" TextChanged="tbPassword_TextChanged"/>
+        <TextBox Name="tbRepeatPW" Height="50" Width="300" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,400,100,0" TextChanged="tbRepeatPW_TextChanged"/>
+        <Button Name="btnRegister" VerticalAlignment="Bottom" HorizontalAlignment="Center" Content="Zarejestruj się" Margin="0,0,0,200" Click="btnRegister_Click"/>
+        <TextBlock Text="Imię:" Margin="23,115,1200,583" FontSize="15" RenderTransformOrigin="0.158,0.255" HorizontalTextAlignment="Center" TextAlignment="Center"/>
+        <TextBlock Text="Nazwisko:" Margin="10,209,1188,489" FontSize="15" RenderTransformOrigin="0.158,0.255" HorizontalTextAlignment="Center" TextAlignment="Center"/>
+        <TextBlock Text="Stanowisko: " Margin="-2,313,1191,385" FontSize="15" RenderTransformOrigin="0.158,0.255" HorizontalTextAlignment="Center" TextAlignment="Center"/>
+        <TextBlock Text="Płeć:" Margin="17,400,1206,298" FontSize="15" RenderTransformOrigin="0.158,0.255" HorizontalTextAlignment="Center" TextAlignment="Center"/>
+        <TextBlock Text="E-mail: " Margin="791,115,432,583" FontSize="15" RenderTransformOrigin="0.158,0.255" HorizontalTextAlignment="Center" TextAlignment="Center"/>
+        <TextBlock Text="Login: " Margin="804,215,419,483" FontSize="15" RenderTransformOrigin="0.158,0.255" HorizontalTextAlignment="Center" TextAlignment="Center"/>
+        <TextBlock Text="Hasło" Margin="804,313,419,385" FontSize="15" RenderTransformOrigin="0.158,0.255" HorizontalTextAlignment="Center" TextAlignment="Center"/>
+        <TextBlock Text="Powtórz Hasło:" Margin="743,409,401,284" FontSize="15" RenderTransformOrigin="0.158,0.255" HorizontalTextAlignment="Center" TextAlignment="Center"/>
+        <Button Name="btnGoBack" Content="Powrót do strony głównej" Margin="300,488,0,0" VerticalAlignment="Top"  Click="btnGoBack_Click"/>
+    </Grid>
+</Page>
